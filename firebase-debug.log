@@ -1,0 +1,66 @@
+[debug] [2023-09-21T05:52:56.649Z] ----------------------------------------------------------------------
+[debug] [2023-09-21T05:52:56.650Z] Command:       /usr/local/bin/firebase /Users/tariqul/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase projects:list --json
+[debug] [2023-09-21T05:52:56.651Z] CLI Version:   12.4.8
+[debug] [2023-09-21T05:52:56.651Z] Platform:      darwin
+[debug] [2023-09-21T05:52:56.651Z] Node Version:  v16.16.0
+[debug] [2023-09-21T05:52:56.652Z] Time:          Thu Sep 21 2023 11:52:56 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-09-21T05:52:56.652Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-21T05:52:56.656Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-21T05:52:56.656Z] > authorizing via signed-in user (simec.apps.dev@gmail.com)
+[debug] [2023-09-21T05:52:56.659Z] > refreshing access token with scopes: []
+[debug] [2023-09-21T05:52:56.661Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-21T05:52:56.661Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-21T05:52:56.951Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-09-21T05:52:56.951Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-21T05:52:56.953Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-09-21T05:53:26.955Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects?pageSize=1000, {"headers":{},"method":"GET","signal":{}}): AbortError: The user aborted a request.
+[debug] [2023-09-21T05:53:26.956Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000
+[debug] [2023-09-21T05:53:27.189Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000
+    at RetryOperation._fn (/Users/tariqul/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:235:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2023-09-21T05:56:59.929Z] ----------------------------------------------------------------------
+[debug] [2023-09-21T05:56:59.931Z] Command:       /usr/local/bin/firebase /Users/tariqul/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2023-09-21T05:56:59.931Z] CLI Version:   12.4.8
+[debug] [2023-09-21T05:56:59.931Z] Platform:      darwin
+[debug] [2023-09-21T05:56:59.931Z] Node Version:  v16.16.0
+[debug] [2023-09-21T05:56:59.945Z] Time:          Thu Sep 21 2023 11:56:59 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-09-21T05:56:59.946Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-21T05:56:59.952Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-21T05:56:59.952Z] > authorizing via signed-in user (simec.apps.dev@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tariqul/Library/MyProject/Tanvir0810/newversionupdate/wts_customer
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-21T05:58:00.051Z] > refreshing access token with scopes: []
+[debug] [2023-09-21T05:58:00.052Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-21T05:58:00.052Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-21T05:58:00.425Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-09-21T05:58:00.425Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-21T05:58:00.425Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-21T05:58:00.785Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2023-09-21T05:58:00.785Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-09-21T05:58:00.785Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-09-21T05:58:01.016Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/Users/tariqul/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/tariqul/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
